@@ -1,0 +1,200 @@
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background-color: #4dbc39;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #e5e5e5; /* gris claro sobrio */
+  border-radius: 6px; /* opcional: bordes suaves */
+  transition: background-color 0.3s ease;
+}
+
+}
+
+.contacto {
+  margin-right: 50px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(imagenes/herofondo.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #000000;
+}
+
+.hero-content p {
+  color: #000000;
+}
+
+.glass-text {
+  background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde estilo vidrio */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease; /* Animación suave opcional */
+}
+
+/* Contorno suave al texto (opcional) */
+.glass-text h1,
+.glass-text p {
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+}
+
+
+.section {
+  padding: 160px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(3px);
+  margin-top: 80px;
+}
+
+.services-cont {
+  display: flex;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.empresas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.empresas-grid img {
+  width:100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.contact-link {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  background-color: #4dbc39;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+  background-color: #3aa32c;
+}
+
+.footer {
+  background-color: #797279;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.anim-card {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.1s ease-out, transform 0.4s ease-out;
+}
+
+.anim-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}

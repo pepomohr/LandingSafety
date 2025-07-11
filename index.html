@@ -28,7 +28,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#empresas">Empresas</a>
         </li>
-           <a class="nav-link" href="#contacto">Contacto</a>
+           <a class="contacto-hover" class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
@@ -38,54 +38,58 @@
 
   <!-- Hero -->
   <section id="hero" class="hero parallax">
-    <div class="hero-content fade-in glass-text">
-      <h1>Protegiendo tu empresa con excelencia</h1>
-      <p>Soluciones integrales en seguridad e higiene laboral</p>
-    </div>
-  </section>
+  <div class="hero-content fade-in">
+    <h1 class="glass-text">
+      <span class="verde">Safety</span> <span class="gris">Services</span>
+    </h1>
+    <p></p>
+  </div>
+</section>
+
 
   <!-- Sobre Nosotros -->
   <section id="nosotros" class="section fade-in parallax">
     <h2>Sobre Nosotros</h2>
-    <p>Somos un equipo comprometido con la seguridad y el bienestar de tu organización. Trabajamos con pasión, responsabilidad y compromiso para brindarte soluciones efectivas.</p>
+    <p>Somos un equipo de profesionales, dedicados desde hace treinta años, a la prevención y manejo de siniestros y emergencias. Los conocemos, los vivimos, los superamos. Sabemos de ellos. 
+Capitalizamos nuestra experiencia como complemento de una teoría sólida, lo que nos permite brindar soluciones reales y efectivas.
+Nuestro trabajo fue siempre, la protección de las personas.
+</p>
   </section>
 
   <!-- Servicios -->
 <section id="servicios" class="section fade-in">
-    <h2>Servicios</h2>
-   <div class="services-cont"> <div class="services-grid">
-      <div class="service-card anim-card" onclick="selectService(this)">
-        <h3>Seguridad e Higiene</h3>
-        <p>Asesoría integral para cumplir con normativa vigente.</p>
+  <h2>Servicios</h2> 
+  <div class="services-cont">
+    <div class="services-grid">
+      <div class="service-card anim-card" onclick="mostrarTexto('estudios', 'Realización de estudios', 'Adaptándonos a las necesidades de cada organización y a la normativa legal vigente, se realizan los relevamientos necesarios, y mediciones con equipos en caso de corresponder, y se confeccionan los siguientes estudios.')">
+        <h3>Realización de estudios</h3>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('medicina', 'Medicina Laboral', 'Servicios relacionados con la salud ocupacional y evaluaciones médicas para garantizar el bienestar de los trabajadores.')">
         <h3>Medicina Laboral</h3>
-        <p>Exámenes y seguimiento médico de los trabajadores.</p>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('capacitaciones', 'Capacitaciones', 'Programas de formación en seguridad laboral, prevención de riesgos y cumplimiento normativo.')">
         <h3>Capacitaciones</h3>
-        <p>Formación en prevención y seguridad para tu equipo.</p>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('ambiental', 'Gestión Ambiental', 'Soluciones para la gestión de riesgos ambientales y cumplimiento de normativas ecológicas.')">
         <h3>Gestión Ambiental</h3>
-        <p>Planes y auditorías ambientales para tu empresa.</p>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('riesgos', 'Evaluación de Riesgos', 'Análisis y mitigación de riesgos laborales para garantizar un entorno de trabajo seguro.')">
         <h3>Evaluación de Riesgos</h3>
-        <p>Detección y mitigación de riesgos laborales.</p>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('emergencias', 'Plan de Emergencias', 'Desarrollo de planes de contingencia y respuesta ante emergencias en el lugar de trabajo.')">
         <h3>Plan de Emergencias</h3>
-        <p>Diseño y ejecución de planes de evacuación y contingencia.</p>
       </div>
-      <div class="service-card anim-card" onclick="selectService(this)">
+      <div class="service-card anim-card" onclick="mostrarTexto('incendios', 'Control de Incendios', 'Estrategias y medidas para la prevención y control de incendios en el entorno laboral.')">
         <h3>Control de Incendios</h3>
-        <p>Instalación y mantenimiento de sistemas contra incendios.</p>
       </div>
     </div>
-    <div class="services-parrafo"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, libero!</p></div>
+    <div id="service-parrafo" class="service-parrafo">
+      <h3 id="service-titulo">Seleccioná un servicio</h3>
+      <p id="service-texto"></p>
+    </div>
   </div>
-  </section>
+</section>
+
 
 
   <!-- Empresas que confían -->

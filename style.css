@@ -192,14 +192,68 @@ nav a:hover {
 }
 
 
-.number {
-  width: 60px;
+.number-01 {
+  width: 130px;
   height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  background-color: #4dbc39;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.number-02 {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: 65px;
+  background-color: #4dbc39;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.number-03 {
+  width: 130px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: 160px;
+  background-color: #4dbc39;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.number-04 {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: 270px;
   background-color: #4dbc39;
   color: #fff;
   font-weight: bold;

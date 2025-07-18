@@ -157,7 +157,7 @@ nav a:hover {
   height: 90%;
   background-color: #717171;
   clip-path: polygon(0 100%, 100% 100%, 0 0);
-  z-index: 0;
+  z-index: 1;
 }
 
 .content {
@@ -254,7 +254,7 @@ nav a:hover {
   color: #000;
   line-height: 1.5;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .image-background {
@@ -263,6 +263,7 @@ nav a:hover {
   right: 0;
   width: 50%;
   height: 100%;
+  z-index: 1;
 }
 
 .image-background img {
@@ -350,6 +351,22 @@ nav a:hover {
   text-overflow: ellipsis;
 }
 
+#como-trabajamos {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100dvh;
+border-radius: 16px;
+border: 1px solid #ddd;
+}
+
+#como-trabajamos img {
+  height: 400px;
+  width: auto;
+  
+}
+
 .slider {
   width: 75vw;
   height: auto;
@@ -385,18 +402,27 @@ width: 200px;
 }
 
 .contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px;
   padding: 15px 30px;
-  background-color: #4dbc39;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  
 }
 
-.contact-link:hover {
-  background-color: #4dbc39;
+.iconos-contacto a img {
+  height: 25px;
+  width: 25px;
+}
+
+.iconos-contacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {

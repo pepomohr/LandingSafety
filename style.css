@@ -88,7 +88,7 @@ nav a:hover {
   border-radius: 16px;
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
-  padding: 5px 5px;
+  padding: 20px;
   color: #fff; 
   font-size: 3rem;
   font-weight: bold;
@@ -118,7 +118,7 @@ nav a:hover {
 
 #porque {
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin: 60px auto !important;
@@ -142,11 +142,11 @@ nav a:hover {
 .diagonal-overlay {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 127%;
   height: 100%;
-  background: linear-gradient(45deg, transparent 70%, #ffffff 50%);
-  z-index: 1;
+  background: linear-gradient(225deg, transparent 70%, #ffffff 50%);
+  z-index: 2;
 }
 
 .gray-triangle {
@@ -263,22 +263,29 @@ nav a:hover {
   right: 0;
   width: 50%;
   height: 100%;
-  z-index: 1;
+  z-index: 1; 
+ 
 }
 
 .image-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 100;
+  opacity: 1;
+  z-index: 1;
 }
 
 .service-parrafo {
-  text-align: center;
+   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
   max-width: 600px;
-  margin: 30px;
   padding: 20px;
   color: #000000;
+  box-sizing: border-box;
+  transform: translateX(-20px);
 }
 
 .service-parrafo h3 {
@@ -287,6 +294,13 @@ nav a:hover {
   margin: 30px;
   padding: 20px;
   color: #4dbc39;
+}
+
+.service-parrafo p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .services-cont {
@@ -357,14 +371,11 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 height: 100dvh;
-border-radius: 16px;
-border: 1px solid #ddd;
 }
 
 #como-trabajamos img {
   height: 400px;
   width: auto;
-  
 }
 
 .slider {

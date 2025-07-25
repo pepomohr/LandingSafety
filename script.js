@@ -46,4 +46,7 @@ function mostrarTexto(texto) {
       clickedCard.classList.add('active');
       lastClickedCard = clickedCard;
     }
+
+    
+
   }

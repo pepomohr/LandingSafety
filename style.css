@@ -314,10 +314,11 @@ nav a:hover {
 
 .service-parrafo h3 {
   text-align: center;
+  justify-content: center;
   max-width: 600px;
   margin: 30px;
   padding: 20px;
-  color: #000;
+  color: #4dbc39;
 }
 
 .service-parrafo p {
@@ -561,6 +562,108 @@ width: 200px;
     display: none !important;
   }
 }
+
+/* Por defecto, ocultamos la sección mobile */
+#porque-mobile {
+  display: none !important;
+}
+
+/* Solo mostrar imagen mobile en celulares, ocultar desktop y tablet */
+@media (max-width: 767px) {
+
+.hero {
+    background-image: url(imagenes/herofondo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    height: auto;
+    min-height: 60vh; /* O lo que te guste */
+    padding-top: 100px; /* para dejar espacio al texto */
+    padding-bottom: 100px;
+  }
+
+  #nosotros p {
+  text-align: center;
+  margin: 40px auto 0 auto;  /* Centrado automático */
+  max-width: 800px;          /* Ajustá según tu gusto */
+  font-size: 1.2rem;
+}
+
+  #porque {
+    display: none !important;
+  }
+
+  #porque-responsive {
+    display: none !important;
+  }
+
+  #porque-mobile {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    max-width: 1200px;
+  }
+
+  #porque-mobile .responsive-image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .section {
+    padding: 60px 15px !important;
+    margin: 30px auto !important;
+  }
+
+   #service-texto  {
+  text-align: center;
+  margin: 40px auto 0 auto;  /* Centrado automático */
+  margin-left: 20px;
+  max-width: 800px;          /* Ajustá según tu gusto */
+  font-size: 1.2rem;
+}
+
+  .service-card {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .services-cont {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .service-parrafo h3,
+  .service-parrafo p {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-left: 70px;
+  }
+
+  #como-trabajamos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .iconos-contacto {
+    flex-direction: row;
+  }
+
+  .hero {
+    background-attachment: scroll; /* Para mejorar performance en móviles */
+    background-size: cover;
+  }
+}
+
 
 
 

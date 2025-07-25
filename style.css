@@ -529,6 +529,10 @@ width: 200px;
   .hero-content h1 {
     font-size: 5rem;
   }
+
+  #nosotros p {
+    margin-right: 100px;
+  }
   
   #porque {
     display: none !important;

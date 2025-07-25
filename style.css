@@ -255,6 +255,7 @@ nav a:hover {
   line-height: 1.5;
   position: relative;
   z-index: 1;
+max-width: 600px;
 }
 
 .image-background {
